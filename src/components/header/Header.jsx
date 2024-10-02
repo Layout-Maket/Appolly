@@ -11,8 +11,6 @@ function Header() {
             <div className="container">
                 <Navbar/>
 
-
-
                 <div className = "header__inner" > 
                     <div className='fwe'>
                         <div className="header__content">

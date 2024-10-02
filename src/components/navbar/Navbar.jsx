@@ -1,6 +1,3 @@
-
-
-
 import facebook from '../../img/social/facebook.svg';
 import insta from '../../img/social/insta.svg';
 import twitter from '../../img/social/twitter.svg';
@@ -44,25 +41,25 @@ function Navbar() {
             <div className='nav__menu'>
                 <ul className='nav__menu-list'>
                     <li className='nav__menu-item'>
-                        <a className='nav__menu-link' href='#'>Home</a>
+                        <a className='nav__menu-link' href='/'>Home</a>
                     </li>
                     <li className='nav__menu-item'>
-                        <a className = 'nav__menu-link' href='#'>About</a>
+                        <a className = 'nav__menu-link' href='/'>About</a>
                     </li>
                     <li className='nav__menu-item'>
-                        <a className = 'nav__menu-link' href='#'>Features</a>
+                        <a className = 'nav__menu-link' href='/'>Features</a>
                     </li>
                 </ul>
                 <img className = 'nav__menu-logo' src={logo} alt="logo" />
                     <ul className='nav__menu-list'>
                         <li className='nav__menu-item'>
-                            <a className = 'nav__menu-link' href='#'>Screenshot</a>
+                            <a className = 'nav__menu-link' href='/'>Screenshot</a>
                         </li>
                         <li className='nav__menu-item'>
-                            <a className = 'nav__menu-link' href='#'>Blog</a>
+                            <a className = 'nav__menu-link' href='/'>Blog</a>
                         </li>
                         <li className='nav__menu-item'>
-                            <a className = 'nav__menu-link nav__menu-link--decor' href='#'>Download</a>
+                            <a className = 'nav__menu-link nav__menu-link--decor' href='/'>Download</a>
                         </li>
                     </ul>
             </div>
