@@ -1,0 +1,125 @@
+@import "../base/base";
+
+
+.nav {
+
+		// .nav__top
+        margin-bottom: 67px;
+		&__top {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            text-decoration: none;
+		}
+
+		// .nav__contact-list
+
+		&__contact-list {
+            display: flex;
+		}
+
+		// .nav__contact-item
+
+		&__contact-item {
+		}
+
+		// .nav__contact-link
+
+		&__contact-link {
+            text-decoration: none;
+            padding-right: 47px;
+            padding-left: 36px;
+            position: relative;
+            &::after {
+                content: "";
+                
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 18px;
+
+            }
+            &--phone::after {
+                background-image: url('../../img/contact-items/phone.svg');
+            }
+            &--mail::after {
+                background-image: url('../../img/contact-items/mail.svg');
+            }
+		}
+
+		// .nav__social-list
+
+		&__social-list {
+            display: flex;
+		}
+
+		// .nav__social-item
+
+		&__social-item {
+		}
+
+		// .nav__social-link
+
+		&__social-link {
+            padding-right: 30px;
+		}
+
+		// .nav__manu
+
+		&__menu {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 17px 50px;
+            align-items: center;
+            position: relative;
+            color: var(--nav-color);
+            border-radius: 5px
+		}
+
+		// .nav__menu-list
+
+		&__menu-list {
+            display: flex;
+		}
+
+
+        // .nav__menu-logo
+        &__menu-logo {
+            padding: 31px 17px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 5px
+        }
+
+		// .nav__menu-item
+
+		&__menu-item {
+		}
+
+		// .nav__menu-link
+
+		&__menu-link {
+            font-size: 20px;
+            line-height: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-right: 40px;
+		}
+
+		// .nav__menu-link--decor
+
+		&__menu-link--decor {
+            margin-right: 0;
+            color: #fff;
+            background-color: var(--accent-color2);
+            padding: 12px 15px 8px 16px;
+            border-radius: 5px;
+		}
+}

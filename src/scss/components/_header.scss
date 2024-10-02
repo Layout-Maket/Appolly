@@ -1,0 +1,77 @@
+@import "../base/base";
+
+.header {
+    background-image: url('../../img/header-bg.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 35px;
+		// .header__inner
+
+		&__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+		}
+
+		// .header__content
+
+		&__content {
+            border: 18px solid var(--accent-color3);
+            padding: 33px;
+		}
+
+		// .header__baner
+
+		&__baner {
+            background-color: #fff ;
+            margin-left: -100px;
+            max-width: 570px;
+            padding: 40px 23px 40px 30px;
+		}
+
+		// .header__banner-title
+
+		&__banner-title {
+            color: var(--accent-color2);
+            font-weight: 700;
+            font-size: 49px;
+            line-height: 64px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+
+		}
+
+		// .header__banner-desc
+
+		&__banner-desc {
+            color: var(--accent-color1);
+            margin-bottom: 52px;
+		}
+
+		// .header__banner-text
+
+		&__banner-text {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--nav-color);
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 5px;
+		}
+        &__banner-links {
+            display: flex;
+            align-items: center;
+            display: inline-block;
+        }
+
+        &__banner-img {
+            width: 150px;
+            height: 50px;
+            margin-right: 15px;
+        }
+}
+.container {
+}

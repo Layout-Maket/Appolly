@@ -1,7 +1,12 @@
+import './scss/index.scss';
+
+import Header from './components/header/Header';
+
+
 function App() {
   return (
     <div className="App">
-        <h1>Hello, React JS!</h1>
+        <Header></Header>
     </div>
   );
 }
