@@ -6,6 +6,7 @@ import Features from './components/features/Features';
 import Look from './components/look/Look';
 import Download from './components/download/Download';
 import Customers from './components/customers/Customers';
+import Footer from './components/footer/Footer';
 
 
 
@@ -24,6 +25,8 @@ function App() {
 
         <Customers/>
 
+
+        <Footer/>
     </div>
   );
 }
