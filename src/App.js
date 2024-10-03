@@ -3,6 +3,10 @@ import './scss/index.scss';
 import Header from './components/header/Header';
 import About from './components/about/About';
 import Features from './components/features/Features';
+import Look from './components/look/Look';
+import Download from './components/download/Download';
+import Customers from './components/customers/Customers';
+
 
 
 function App() {
@@ -13,6 +17,13 @@ function App() {
         <About/>
 
         <Features/>
+
+        <Look/>
+
+        <Download/>
+
+        <Customers/>
+
     </div>
   );
 }

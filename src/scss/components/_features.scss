@@ -76,7 +76,10 @@
 		}
 
         &__mobile-img {
-            margin-right: -80px;
+            height: 932px;
+            margin: 60px 35px;
+            filter: drop-shadow(5px 5px 10px #000000);
+            // margin-right: -80px;
         }
 
 		// .features__mobile-list
