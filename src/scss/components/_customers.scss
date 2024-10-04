@@ -54,6 +54,7 @@
         }
         .swiper-slide-active .customers__slider-card {
         transform: scaleX(0.6) !important; /* Скасовуємо ефект масштабу 1.1 */
+        padding: 0 25px;
         }
 
 		// .customers__slider-card
@@ -78,4 +79,20 @@
 
         }
 
+}
+
+
+@media (max-width: 1000px){
+    .customers {
+        padding: 100px 0;
+        &__slider.swiper-slide-active {
+            transform: none !important; /* Збільшуємо активний слайд */
+            height:  400px  !important; /* Робимо його вище за інші */
+            border-radius: 10px;
+            filter: drop-shadow(5px 5px 10px #000000);
+        }
+        .swiper-slide-active .customers__slider-card {
+        transform: none !important; /* Скасовуємо ефект масштабу 1.1 */
+        }
+    }
 }

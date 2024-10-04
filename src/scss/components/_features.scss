@@ -7,6 +7,7 @@
     background-size: cover;
     background-position: center;
     color: #fff;
+    min-height: 100vh;
 		// .features__top
 
 		&__top {
@@ -92,4 +93,50 @@
             align-items: space-between;
             height: 650px;
 		}
+}
+
+
+@media (max-width: 1200px){
+    .features {
+        padding: 100px;
+        &__mobile-img, &__mobile {
+            height: 700px;
+        }
+    }
+            
+}
+
+
+@media (max-width: 700px){
+    .features {
+        &__mobile-img {
+            height: 500px;
+            margin: 50px 20px;
+        }
+    }
+            
+}
+
+
+@media (max-width: 600px){
+    .features {
+        padding: 80px;
+        &__mobile {
+            flex-direction: column;
+            gap: 30px;
+            height: auto;
+        }
+        &__content-item {
+            text-align: center;
+        }
+        &__mobile-list {
+            height: auto;
+            gap: 30px;
+            margin: 30px 0;
+		}
+        &__mobile-img {
+            height: auto;
+        }
+    }
+            
 }

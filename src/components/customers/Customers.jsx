@@ -13,7 +13,7 @@ import profile_1 from "../../img/customers-photo/photo-1.png"
 
 function Customers() {
     return (
-        <section className="customers">
+        <section className="customers" id='blog'>
             <div className="container">
                 <div className="customers__inner">
                     <div className="customers__top">
@@ -28,7 +28,16 @@ function Customers() {
                 pagination={{ clickable: true }} 
                 initialSlide={1}
                 centeredSlides={true} 
-                pagination={true}
+                breakpoints={{
+                        // when window width is >= 640px
+                        320: {
+                        slidesPerView: 1,
+                        },
+                        // when window width is >= 768px
+                        1000: {
+                        slidesPerView: 3,
+                        },
+                }}
                 modules={[Pagination]}
                 >
                     <SwiperSlide className="customers__slider">

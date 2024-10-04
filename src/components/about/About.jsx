@@ -2,7 +2,7 @@ import phone_about from "../../img/phone-about.png"
 
 function About() {
     return (
-        <section className="about">
+        <section className="about" id="about">
             <div className="container">
                 <div className="about__top">
                     <h2 className="about__top-title section-title">About Our App</h2>

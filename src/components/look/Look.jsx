@@ -16,7 +16,7 @@ import phone__5 from "../../img/slider-items/phone-5.png"
 
 function Look() {
     return (
-        <section className="look">
+        <section className="look" id='screenshot'>
             <div className="container-look">
                 <div className="look__top">
                     <h6 className="look__top-title section-title">Checkout Our App Interface Look</h6>
@@ -35,6 +35,19 @@ function Look() {
                     //     nextEl: '.swiper-button-next',
                     //     prevEl: '.swiper-button-prev',
                     // }}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        320: {
+                        slidesPerView: 1,
+                        },
+                        // when window width is >= 768px
+                        900: {
+                        slidesPerView: 3,
+                        },
+                        1600: {
+                        slidesPerView: 5,
+                        },
+                    }}
                     coverflowEffect={{
                     rotate: 25,
                     stretch: 0,
@@ -65,7 +78,7 @@ function Look() {
                             <img className="look__slider-img" src={phone__2} alt="" />
                         </div>
                     </SwiperSlide>
-                                        <SwiperSlide>
+                    <SwiperSlide>
                         <div className="look__slider-item">
                             <img className="look__slider-img" src={phone__3} alt="" />
                         </div>

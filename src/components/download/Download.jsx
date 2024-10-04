@@ -4,7 +4,7 @@ import phone_download from '../../img/phone-download.png';
 
 function Download() {
     return (
-        <section className="download">
+        <section className="download" id='download'>
             <div className="container">
                 <div className="download__inner">
                     <div className="download__content">

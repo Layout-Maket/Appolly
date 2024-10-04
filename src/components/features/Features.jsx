@@ -2,7 +2,7 @@ import phone_features from "../../img/phone-features.png"
 
 function Features() {
     return (
-        <section className="features">
+        <section className="features" id="features">
             <div className="container">
                 <div className="features__inner">
                     <div className="features__top">

@@ -2,7 +2,7 @@
 
 .header {
     background-image: url('../../img/header-bg.jpg');
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,6 +22,11 @@
             border: 18px solid var(--accent-color3);
             padding: 33px;
 		}
+
+        &__content-img {
+            max-width: 80%;
+            margin-left: 20px;
+        }
 
 		// .header__baner
 
@@ -64,7 +69,6 @@
         &__banner-links {
             display: flex;
             align-items: center;
-            display: inline-block;
         }
 
         &__banner-img {
@@ -73,5 +77,88 @@
             margin-right: 15px;
         }
 }
-.container {
+
+
+@media (max-width: 1350px){
+    .header {
+        &__baner {
+        background-color: #fff;
+        margin-left: 0;
+        max-width: 500px;
+        padding: 40px 23px 40px 30px;
+        }
+        &__content-img {
+        height: 700px;
+        }
+        &__banner-title {
+        font-size: 45px;
+        line-height: 62px;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .header {
+        &__content {
+            padding: 20px;
+        }
+        &__baner {
+            background-color: #fff;
+            margin-left: 0;
+            max-width: 450px;
+            padding: 20px;
+        }
+        &__content-img {
+            height: 600px;
+        }
+        &__banner-title {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+}
+
+
+@media (max-width: 800px){
+    .header {
+        &__inner {
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__baner {
+            max-width: 100%;
+        }
+        &__content-img {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .header {
+        &__banner-title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        &__banner-text {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__banner-img {
+            width: 90px;
+            height: 30px;
+        }
+        .header__content {
+            border: 12px solid var(--accent-color3);
+            padding: 12px;
+        }
+        &__content-img {
+            height: 500px;
+        }
+    }
 }

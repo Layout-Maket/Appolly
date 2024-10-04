@@ -7,12 +7,11 @@ import phone from '../../img/phone.png';
 
 function Header() {
     return (
-        <header className="header">
+        <header className="header" id='home'>
             <div className="container">
                 <Navbar/>
 
                 <div className = "header__inner" > 
-                    <div className='fwe'>
                         <div className="header__content">
                             <div className = "header__baner">
                                 <h1 className="header__banner-title">A Great App Makes
@@ -25,9 +24,8 @@ function Header() {
                                 </div>
                                     
                             </div>
-                        </div>
                     </div>
-                    <img src={phone} alt="phone"/>
+                    <img className="header__content-img" src={phone} alt="phone"/>
                 </div>
             </div>
         </header>

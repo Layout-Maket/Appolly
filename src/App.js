@@ -25,7 +25,6 @@ function App() {
 
         <Customers/>
 
-
         <Footer/>
     </div>
   );

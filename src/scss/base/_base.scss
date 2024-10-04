@@ -141,3 +141,22 @@ html {
     margin: 0 auto;
     margin-bottom: 60px;
 }
+
+
+@media (max-width: 700px){
+    .section-title {
+        font-size: 28px;
+        line-height: 44px;
+    }     
+}
+
+
+@media (max-width: 500px){
+    .container {
+        padding: 0 10px;
+    }
+            
+}
+
+
+
