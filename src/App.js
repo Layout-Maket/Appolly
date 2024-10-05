@@ -8,24 +8,44 @@ import Download from './components/download/Download';
 import Customers from './components/customers/Customers';
 import Footer from './components/footer/Footer';
 
+import AnimatedBlock from './components/animated/AnimatedBlock';
+
 
 
 function App() {
   return (
     <div className="App">
-        <Header/>
+        <AnimatedBlock>
+            <Header/>
+        </AnimatedBlock>
 
-        <About/>
+        <AnimatedBlock>
+            <About/>
+        </AnimatedBlock>
 
-        <Features/>
 
-        <Look/>
+        <AnimatedBlock>
+            <Features/>
+        </AnimatedBlock>
 
-        <Download/>
+        <AnimatedBlock>
+            <Look/>
+        </AnimatedBlock>
 
-        <Customers/>
+        <AnimatedBlock>
+            <Download/>
+        </AnimatedBlock>
+        
 
-        <Footer/>
+        <AnimatedBlock>
+            <Customers/>
+        </AnimatedBlock>
+
+        
+        <AnimatedBlock>
+            <Footer/>
+        </AnimatedBlock>
+        
     </div>
   );
 }
