@@ -39,13 +39,22 @@
 
 		&__content-item {
             max-width: 297px;
+            transition: all .5s;
+            svg path {
+                transition: all .5s;
+            }
             &--center {
                 text-align: center;
-                margin: 0 auto;
+                margin: 15px auto;
             }
             &--right {
                 text-align: right;
                 margin: 0 auto;
+            }
+            &:hover {
+                svg path {
+                    fill: rgb(65, 29, 131);
+                }
             }
 		}
 

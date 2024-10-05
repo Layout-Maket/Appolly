@@ -5,6 +5,9 @@ import twitter from '../../img/social/twitter.svg';
 import youtube from '../../img/social/youtube.svg';
 import logo from '../../img/logo.svg';
 
+import Button from '../button/Button';
+// import Switch from '../Switch/Switch';
+
 
 function Navbar() {
     const [isActiveHome, setIsActiveHome] = useState(false)
@@ -96,14 +99,16 @@ function Navbar() {
                             <a className = 'nav__menu-link' href='#blog'>Blog</a>
                     </li>
                     <li className='nav__menu-item'>
-                            <a className = 'nav__menu-link nav__menu-link--decor' href='#download'>Download</a>
+                            <a className = 'nav__menu-link nav__menu-link--decor' href='#download'><Button/></a>
                     </li>
                 </ul>
+                
                 <svg className={`nav__top-blog ${isActiveBlog ? 'nav__top-blog--active' : ''}`} onClick={toggleActiveClassBlog} width="35px" height="35px" viewBox="0 0 35 35" version="1.1">
                 <g id="surface1">
                 <path d="M 4.375 8.75 C 4.375 7.945312 5.027344 7.292969 5.832031 7.292969 L 29.167969 7.292969 C 29.972656 7.292969 30.625 7.945312 30.625 8.75 C 30.625 9.554688 29.972656 10.207031 29.167969 10.207031 L 5.832031 10.207031 C 5.027344 10.207031 4.375 9.554688 4.375 8.75 Z M 4.375 17.5 C 4.375 16.695312 5.027344 16.042969 5.832031 16.042969 L 29.167969 16.042969 C 29.972656 16.042969 30.625 16.695312 30.625 17.5 C 30.625 18.304688 29.972656 18.957031 29.167969 18.957031 L 5.832031 18.957031 C 5.027344 18.957031 4.375 18.304688 4.375 17.5 Z M 5.832031 24.792969 C 5.027344 24.792969 4.375 25.445312 4.375 26.25 C 4.375 27.054688 5.027344 27.707031 5.832031 27.707031 L 29.167969 27.707031 C 29.972656 27.707031 30.625 27.054688 30.625 26.25 C 30.625 25.445312 29.972656 24.792969 29.167969 24.792969 Z M 5.832031 24.792969 "/>
                 </g>
                 </svg>
+                {/* <Switch/> */}
             </div>
         </nav>
     )

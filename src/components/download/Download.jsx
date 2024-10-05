@@ -1,6 +1,8 @@
 import appStoreImg from '../../img/app/app-store.png';
 import googlePlayImg from '../../img/app/google-play.png';
 import phone_download from '../../img/phone-download.png';
+// import Google from '../google/Google';
+// import Apple from '../apple/Apple';
 
 function Download() {
     return (
@@ -12,8 +14,13 @@ function Download() {
                         <p className="download__content-text section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
 
                         <div className='download__banner-links'>
-                            <a className='download__banner-link' href="google.com"><img src={googlePlayImg}/></a>
-                            <a className='download__banner-link' href="apple.com"><img src={appStoreImg}/></a>
+                            <a className='download__banner-link' href="google.com">
+                                
+                                <img src={googlePlayImg}/>
+                            </a>
+                            <a className='download__banner-link' href="apple.com">
+                                <img src={appStoreImg}/>
+                            </a>
                         </div>
                         <ul className="download__stats-list">
                             <li className="download__stats-item">
